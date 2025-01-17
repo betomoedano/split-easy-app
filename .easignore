@@ -9,8 +9,6 @@ dist/
 web-build/
 expo-env.d.ts
 
-ServiceAccountSplitEase.json
-
 # Native
 *.orig.*
 *.jks
