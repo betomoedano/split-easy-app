@@ -24,7 +24,7 @@ const getAppName = () => {
     return "SplitEase (Preview)";
   }
 
-  return "SplitEase";
+  return "SplitEase | Prod";
 };
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
@@ -40,6 +40,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ios: {
     supportsTablet: true,
     bundleIdentifier: getUniqueIdentifier(),
+    config: {
+      usesNonExemptEncryption: false,
+    },
   },
   android: {
     adaptiveIcon: {
@@ -75,6 +78,12 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     eas: {
       projectId: "cd415335-b364-43d1-a693-a0fd5a0db317",
     },
+  },
+  updates: {
+    url: "https://u.expo.dev/cd415335-b364-43d1-a693-a0fd5a0db317",
+  },
+  runtimeVersion: {
+    policy: "appVersion",
   },
   owner: "betoatexpo",
 });

@@ -59,7 +59,7 @@ export default function Index() {
         style={[styles.container, isDark && styles.containerDark]}
       >
         <Text style={[styles.amount, isDark && styles.amountDark]}>
-          ${calculateSplit().toFixed(2)} test
+          ${calculateSplit().toFixed(2)}
         </Text>
         <View style={styles.content}>
           <View style={styles.inputGroup}>
