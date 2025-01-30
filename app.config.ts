@@ -43,10 +43,16 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     config: {
       usesNonExemptEncryption: false,
     },
+    icon: {
+      dark: "./assets/icons/ios-dark.png",
+      light: "./assets/icons/ios-light.png",
+      tinted: "./assets/icons/ios-tinted.png",
+    },
   },
   android: {
     adaptiveIcon: {
-      foregroundImage: "./assets/images/adaptive-icon.png",
+      foregroundImage: "./assets/icons/adaptive-icon.png",
+      monochromeImage: "./assets/icons/adaptive-icon.png",
       backgroundColor: "#ffffff",
     },
     package: getUniqueIdentifier(),
@@ -61,10 +67,14 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     [
       "expo-splash-screen",
       {
-        image: "./assets/images/splash-icon.png",
+        image: "./assets/icons/splash-icon-dark.png",
         imageWidth: 200,
         resizeMode: "contain",
         backgroundColor: "#ffffff",
+        dark: {
+          image: "./assets/icons/splash-icon-light.png",
+          backgroundColor: "#000000",
+        },
       },
     ],
   ],
