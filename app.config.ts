@@ -24,7 +24,7 @@ const getAppName = () => {
     return "Split Ease-Prev";
   }
 
-  return "Split Ease";
+  return "SplitEase - Bill Share";
 };
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
