@@ -17,14 +17,14 @@ const getUniqueIdentifier = () => {
 
 const getAppName = () => {
   if (IS_DEV) {
-    return "SplitEase (Dev)";
+    return "Split Ease-Dev";
   }
 
   if (IS_PREVIEW) {
-    return "SplitEase (Preview)";
+    return "Split Ease-Prev";
   }
 
-  return "SplitEase | Prod";
+  return "Split Ease";
 };
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
